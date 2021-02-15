@@ -370,3 +370,8 @@ letter-spacing: 0.02em;
 
 color: #000000;
 }
+
+.feedback__poscheck1{
+    margin-left: 20px;
+    padding-left: 0 !important;
+}

@@ -136,32 +136,32 @@ class feedback extends React.Component{
     Your positive consult...
 </div>
 <div class="form-check">
-      <label class="form-check-label" for="check1">
+      <label class="form-check-label" for="check1" className="feedback__poscheck1">
         <input type="checkbox" class="form-check-input" id="check1" name="understanding" value="something" />Understanding
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check2">
+      <label class="form-check-label" for="check2" className="feedback__poscheck2">
         <input type="checkbox" class="form-check-input" id="check2" name="satisfied" value="something"/>Satisfied
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check3">
+      <label class="form-check-label" for="check3" className="feedback__poscheck3">
         <input type="checkbox" class="form-check-input" id="check3" name="polite" value="something"/>Polite
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check4">
+      <label class="form-check-label" for="check4" className="feedback__poscheck4">
         <input type="checkbox" class="form-check-input" id="check4" name="valueForMoney" value="something"/>Value for money
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check5">
+      <label class="form-check-label" for="check5" className="feedback__poscheck5">
         <input type="checkbox" class="form-check-input" id="check5" name="properGuidance" value="something"/>Proper Guidance
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check6">
+      <label class="form-check-label" for="check6" className="feedback__poscheck6">
         <input type="checkbox" class="form-check-input" id="check6" name="friendly" value="something"/>Friendly
       </label>
     </div>
@@ -171,24 +171,34 @@ class feedback extends React.Component{
     Your negative consult...
 </div>
 <div class="form-check">
-      <label class="form-check-label" for="check1">
+      <label class="form-check-label" for="check1" className="feedback__negcheck1">
         <input type="checkbox" class="form-check-input" id="check1" name="unprofessional" value="something"/>Unprofessional
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check2">
+      <label class="form-check-label" for="check2" className="feedback__negcheck2">
         <input type="checkbox" class="form-check-input" id="check2" name="notSatisfied" value="something"/>Not Satisfied
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check3">
+      <label class="form-check-label" for="check3" className="feedback__negcheck3">
         <input type="checkbox" class="form-check-input" id="check3" name="impoliteStaff" value="something"/>Impolite Staff
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check4">
+      <label class="form-check-label" for="check4" className="feedback__negcheck4">
         <input type="checkbox" class="form-check-input" id="check4" name="languageBarrier" value="something"/>Language Barrier      </label>
     </div>
+    <div class="form-check">
+      <label class="form-check-label" for="check5" className="feedback__negcheck5">
+        <input type="checkbox" class="form-check-input" id="check5" name="noProperGuidance" value="something"/>No Proper Guidance     </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label" for="check6" className="feedback__negcheck6">
+        <input type="checkbox" class="form-check-input" id="check6" name="Awkward" value="something"/>Awkward      </label>
+    </div>
+    
+    
 </div>
 </div>
 <button type="feedback__button" class="btn btn-secondary">Submit Anonymously</button>
