@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/doctor_feedback/static/css/main.44bc5c4c.chunk.css",
-    "main.js": "/doctor_feedback/static/js/main.d2c272bd.chunk.js",
-    "main.js.map": "/doctor_feedback/static/js/main.d2c272bd.chunk.js.map",
-    "runtime-main.js": "/doctor_feedback/static/js/runtime-main.e1900225.js",
-    "runtime-main.js.map": "/doctor_feedback/static/js/runtime-main.e1900225.js.map",
-    "static/js/2.be43d798.chunk.js": "/doctor_feedback/static/js/2.be43d798.chunk.js",
-    "static/js/2.be43d798.chunk.js.map": "/doctor_feedback/static/js/2.be43d798.chunk.js.map",
-    "static/js/3.0e631515.chunk.js": "/doctor_feedback/static/js/3.0e631515.chunk.js",
-    "static/js/3.0e631515.chunk.js.map": "/doctor_feedback/static/js/3.0e631515.chunk.js.map",
+    "main.css": "/doctor_feedback/static/css/main.7e882e10.chunk.css",
+    "main.js": "/doctor_feedback/static/js/main.a28f1d8c.chunk.js",
+    "main.js.map": "/doctor_feedback/static/js/main.a28f1d8c.chunk.js.map",
+    "runtime-main.js": "/doctor_feedback/static/js/runtime-main.84537bfc.js",
+    "runtime-main.js.map": "/doctor_feedback/static/js/runtime-main.84537bfc.js.map",
+    "static/js/2.076dadf9.chunk.js": "/doctor_feedback/static/js/2.076dadf9.chunk.js",
+    "static/js/2.076dadf9.chunk.js.map": "/doctor_feedback/static/js/2.076dadf9.chunk.js.map",
+    "static/js/3.f05467d7.chunk.js": "/doctor_feedback/static/js/3.f05467d7.chunk.js",
+    "static/js/3.f05467d7.chunk.js.map": "/doctor_feedback/static/js/3.f05467d7.chunk.js.map",
     "index.html": "/doctor_feedback/index.html",
-    "static/css/main.44bc5c4c.chunk.css.map": "/doctor_feedback/static/css/main.44bc5c4c.chunk.css.map",
-    "static/js/2.be43d798.chunk.js.LICENSE.txt": "/doctor_feedback/static/js/2.be43d798.chunk.js.LICENSE.txt",
+    "static/css/main.7e882e10.chunk.css.map": "/doctor_feedback/static/css/main.7e882e10.chunk.css.map",
+    "static/js/2.076dadf9.chunk.js.LICENSE.txt": "/doctor_feedback/static/js/2.076dadf9.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/doctor_feedback/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e1900225.js",
-    "static/js/2.be43d798.chunk.js",
-    "static/css/main.44bc5c4c.chunk.css",
-    "static/js/main.d2c272bd.chunk.js"
+    "static/js/runtime-main.84537bfc.js",
+    "static/js/2.076dadf9.chunk.js",
+    "static/css/main.7e882e10.chunk.css",
+    "static/js/main.a28f1d8c.chunk.js"
   ]
 }
