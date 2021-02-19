@@ -17,7 +17,7 @@ class feedback extends React.Component{
          understandingSelected:false,
          satisfiedSelected:false,
          politeSelected:false,
-         valueOfMoneySelected:false,
+         valueForMoneySelected:false,
          properGuidanceSelected:false,
          friendlySelected:false,
           unprofessionalSelected:false,
@@ -49,9 +49,9 @@ class feedback extends React.Component{
                 this.setState({politeSelected: e.target.checked})
             }
             console.log(e.target.checked,e.target.name)
-            if(e.target.name=== "valueOfMoney")
+            if(e.target.name=== "valueForMoney")
             {
-                this.setState({valueOfMoneySelected: e.target.checked})
+                this.setState({valueForMoneySelected: e.target.checked})
             }
             console.log(e.target.checked,e.target.name)
             if(e.target.name=== "properGuidance")
@@ -72,6 +72,26 @@ class feedback extends React.Component{
             if(e.target.name=== "notSatisfied")
             {
                 this.setState({notSatisfiedSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "impoliteStaff")
+            {
+                this.setState({impoliteStaffSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "languageBarrier")
+            {
+                this.setState({languageBarrierSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "noProperGuidance")
+            {
+                this.setState({noProperGuidanceSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "awkward")
+            {
+                this.setState({awkwardSelected: e.target.checked})
             }
             console.log(e.target.checked,e.target.name)
 
@@ -234,7 +254,7 @@ class feedback extends React.Component{
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check4"  className={this.state.valueOfMoneySelected===true? "feedback__poscheck":" feedback__posuncheck"}>
+      <label class="form-check-label" for="check4"  className={this.state.valueForMoneySelected===true? "feedback__poscheck":" feedback__posuncheck"}>
         <input type="checkbox" class="form-check-input" id="check4" name="valueForMoney" onChange={this.handleOnChange}/>Value for money
       </label>
     </div>
@@ -281,7 +301,7 @@ class feedback extends React.Component{
     </div>
     <div class="form-check">
       <label class="form-check-label" for="check6" className={this.state.awkwardSelected===true? "feedback__negcheck":" feedback__neguncheck"}>
-        <input type="checkbox" class="form-check-input" id="check6" name="Awkward" onChange={this.handleOnChange}/>Awkward      </label>
+        <input type="checkbox" class="form-check-input" id="check6" name="awkward" onChange={this.handleOnChange}/>Awkward      </label>
     </div>
     </div>
     
