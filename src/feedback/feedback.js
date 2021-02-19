@@ -11,10 +11,92 @@ const ratingChanged = (newRating) => {
 
 class feedback extends React.Component{
 
+    constructor(){
+        super();
+        this.state = {
+         understandingSelected:false,
+         satisfiedSelected:false,
+         politeSelected:false,
+         valueOfMoneySelected:false,
+         properGuidanceSelected:false,
+         friendlySelected:false,
+          unprofessionalSelected:false,
+          notSatisfiedSelected:false,
+          impoliteStaffSelected:false,
+          languageBarrierSelected:false,
+          noProperGuidanceSelected:false,
+          awkwardSelected:false
+
+        }
+         this.handleChange = this.handleChange.bind(this);
+         this.handleSubmit = this.handleSubmit.bind(this);
+      }
+    
+      handleOnChange=e=>{
+         // e.preventDefault();
+            if(e.target.name=== "understanding")
+            {
+                this.setState({understandingSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "satisfied")
+            {
+                this.setState({satisfiedSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "polite")
+            {
+                this.setState({politeSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "valueOfMoney")
+            {
+                this.setState({valueOfMoneySelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "properGuidance")
+            {
+                this.setState({properGuidanceSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "friendly")
+            {
+                this.setState({friendlySelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "unprofessional")
+            {
+                this.setState({unprofessionalSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+            if(e.target.name=== "notSatisfied")
+            {
+                this.setState({notSatisfiedSelected: e.target.checked})
+            }
+            console.log(e.target.checked,e.target.name)
+
+
+
+
+
+
+      }
+
+
+
+      handleChange(e) {
+        this.setState({ 
+          [e.target.name]: e.target.value });
+      }
+    
+      handleSubmit(e){
+        e.preventDefault();
+      }
     recommend(event) {
         console.log(event.target.value);
       }
       
+
       
 
     render()
@@ -52,8 +134,8 @@ class feedback extends React.Component{
  <div className="feedback__r2 ">
      How long was the wait to see the Doctor ?
  </div>
- <div className="feedback__r3">
-                             <div className="feedback__waitButtons p-0">
+ <div className="feedback__r3 ">
+                             <div className="feedback__waitButtons d-flex justify-content-start p-0">
                                  <a href="#">
                                      <button className="min15" style ={{"width": "60px", "height": "30px"}}>15 min</button>
                                  </a>
@@ -135,69 +217,73 @@ class feedback extends React.Component{
 <div className="feedback__r10">
     Your positive consult...
 </div>
+<div className="feedback__check">
 <div class="form-check">
-      <label class="form-check-label" for="check1" className="feedback__poscheck1">
-        <input type="checkbox" class="form-check-input" id="check1" name="understanding" value="something" />Understanding
+      <label class="form-check-label" for="check1" className={this.state.understandingSelected===true? "feedback__poscheck":" feedback__posuncheck"}>
+        <input type="checkbox" class="form-check-input" id="check1" name="understanding"  onChange={this.handleOnChange} />Understanding
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check2" className="feedback__poscheck2">
-        <input type="checkbox" class="form-check-input" id="check2" name="satisfied" value="something"/>Satisfied
+      <label class="form-check-label" for="check2"  className={this.state.satisfiedSelected===true? "feedback__poscheck":" feedback__posuncheck"}>
+        <input type="checkbox" class="form-check-input" id="check2" name="satisfied" onChange={this.handleOnChange}/>Satisfied
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check3" className="feedback__poscheck3">
-        <input type="checkbox" class="form-check-input" id="check3" name="polite" value="something"/>Polite
+      <label class="form-check-label" for="check3"  className={this.state.politeSelected===true? "feedback__poscheck":" feedback__posuncheck"}>
+        <input type="checkbox" class="form-check-input" id="check3" name="polite" onChange={this.handleOnChange}/>Polite
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check4" className="feedback__poscheck4">
-        <input type="checkbox" class="form-check-input" id="check4" name="valueForMoney" value="something"/>Value for money
+      <label class="form-check-label" for="check4"  className={this.state.valueOfMoneySelected===true? "feedback__poscheck":" feedback__posuncheck"}>
+        <input type="checkbox" class="form-check-input" id="check4" name="valueForMoney" onChange={this.handleOnChange}/>Value for money
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check5" className="feedback__poscheck5">
-        <input type="checkbox" class="form-check-input" id="check5" name="properGuidance" value="something"/>Proper Guidance
+      <label class="form-check-label" for="check5"  className={this.state.properGuidanceSelected===true? "feedback__poscheck":" feedback__posuncheck"}>
+        <input type="checkbox" class="form-check-input" id="check5" name="properGuidance" onChange={this.handleOnChange}/>Proper Guidance
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check6" className="feedback__poscheck6">
-        <input type="checkbox" class="form-check-input" id="check6" name="friendly" value="something"/>Friendly
+      <label class="form-check-label" for="check6"  className={this.state.friendlySelected===true? "feedback__poscheck":" feedback__posuncheck"}>
+        <input type="checkbox" class="form-check-input" id="check6" name="friendly" onChange={this.handleOnChange}/>Friendly
       </label>
+    </div>
     </div>
 
 
 <div className="feedback__r11">
     Your negative consult...
 </div>
+<div className="feedback__check">
+
 <div class="form-check">
-      <label class="form-check-label" for="check1" className="feedback__negcheck1">
-        <input type="checkbox" class="form-check-input" id="check1" name="unprofessional" value="something"/>Unprofessional
+      <label class="form-check-label" for="check1" className={this.state.unprofessionalSelected===true? "feedback__negcheck":" feedback__neguncheck"}>
+        <input type="checkbox" class="form-check-input" id="check1" name="unprofessional" onChange={this.handleOnChange}/>Unprofessional
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check2" className="feedback__negcheck2">
-        <input type="checkbox" class="form-check-input" id="check2" name="notSatisfied" value="something"/>Not Satisfied
+      <label class="form-check-label" for="check2" className={this.state.notSatisfiedSelected===true? "feedback__negcheck":" feedback__neguncheck"}>
+        <input type="checkbox" class="form-check-input" id="check2" name="notSatisfied" onChange={this.handleOnChange}/>Not Satisfied
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check3" className="feedback__negcheck3">
-        <input type="checkbox" class="form-check-input" id="check3" name="impoliteStaff" value="something"/>Impolite Staff
+      <label class="form-check-label" for="check3" className={this.state.impoliteStaffSelected===true? "feedback__negcheck":" feedback__neguncheck"}>
+        <input type="checkbox" class="form-check-input" id="check3" name="impoliteStaff" onChange={this.handleOnChange}/>Impolite Staff
       </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check4" className="feedback__negcheck4">
-        <input type="checkbox" class="form-check-input" id="check4" name="languageBarrier" value="something"/>Language Barrier      </label>
+      <label class="form-check-label" for="check4" className={this.state.languageBarrierSelected===true? "feedback__negcheck":" feedback__neguncheck"}>
+        <input type="checkbox" class="form-check-input" id="check4" name="languageBarrier" onChange={this.handleOnChange}/>Language Barrier      </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check5" className="feedback__negcheck5">
-        <input type="checkbox" class="form-check-input" id="check5" name="noProperGuidance" value="something"/>No Proper Guidance     </label>
+      <label class="form-check-label" for="check5" className={this.state.noProperGuidanceSelected===true? "feedback__negcheck":" feedback__neguncheck"}>
+        <input type="checkbox" class="form-check-input" id="check5" name="noProperGuidance" onChange={this.handleOnChange}/>No Proper Guidance     </label>
     </div>
     <div class="form-check">
-      <label class="form-check-label" for="check6" className="feedback__negcheck6">
-        <input type="checkbox" class="form-check-input" id="check6" name="Awkward" value="something"/>Awkward      </label>
+      <label class="form-check-label" for="check6" className={this.state.awkwardSelected===true? "feedback__negcheck":" feedback__neguncheck"}>
+        <input type="checkbox" class="form-check-input" id="check6" name="Awkward" onChange={this.handleOnChange}/>Awkward      </label>
     </div>
-    
+    </div>
     
 </div>
 </div>

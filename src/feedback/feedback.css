@@ -2,6 +2,29 @@
     margin-left: 400px;
     margin-top: 70px;
 } */
+.feedback__poscheck{
+    color: green;
+    
+}
+.feedback__posuncheck{
+    color: #000000;
+}
+.feedback__negcheck{
+    color: red;
+    
+}
+.feedback__neguncheck{
+    color: #000000;
+}
+
+input[type="checkbox"]:checked{
+    background-color: green;
+    color: green;
+}
+.feedback__check{
+    text-align: left;
+    margin-left: 30px;
+}
 .checkbox-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -182,7 +205,7 @@ color: #000000;
     margin-left: 36px;
     
     padding-left: 0 !important;
-    margin-left: 0 !important;
+    margin-left: 36px !important;
     margin-top: 10px;
     margin-bottom: 15px;
 }
@@ -338,6 +361,7 @@ color: #000000;
     
 margin-top: 10px;
 margin-left: 20px;
+margin-bottom: 10px;
 background: rgba(83, 193, 31, 0.1);
 
 }
@@ -345,7 +369,7 @@ background: rgba(83, 193, 31, 0.1);
 
     margin-top: 10px;
     margin-left: 20px;
-    
+margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
 font-style: normal;
 font-weight: 600;
